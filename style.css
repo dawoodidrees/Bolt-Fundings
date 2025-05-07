@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.cc__navbar {
+  background-color: #fff;
+  box-shadow: 0 3px 13px #24293023;
+  padding: 20px 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container__navbar__links {
+  display: flex;
+  align-items: center;
+}
+
+.container__navbar__links__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container__navbar__links__list li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.container__navbar__links__list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+  padding-inline: 20px;
+  transition: color 0.3s;
+}
+
+.container__navbar__links__apply,
+.hero__apply {
+  margin-left: 40px;
+  padding: 15px 35px;
+  background-color: #ee801e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.hero__apply {
+  margin-left: 0;
+}
+
+/* New styles for the funding header */
+.funding-header {
+  padding: 3rem 0;
+}
+
+.text-orange {
+  color: #ee801e;
+}
+
+.btn-apply-funding {
+  background-color: #ee801e;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 16px;
+}
+
+.btn-apply-funding:hover {
+  background-color: #d67218;
+  color: white;
+}
+
+.funding-header__container {
+  max-width: 90%;
+}
+
+.cc-lh-1 {
+  line-height: 1.2;
+}
+
+.funding-header__description {
+  font-size: 24px;
+}
+
+.funding-cards {
+  background: #f8f8f8;
+}
+
+.funding-cards__description {
+  margin-bottom: 50px;
+}
+
+.info-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  background: #fff;
+}
+
+.info-card-top {
+  padding: 20px;
+  color: white;
+}
+
+.info-card-top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e97236ee;
+  z-index: 2;
+}
+
+.info-circle {
+  background: #fff;
+  color: #e97336;
+  font-size: 34px;
+  line-height: 1;
+  font-weight: bold;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.info-card-bottom {
+  padding: 40px 20px;
+}
+
+.info-card-bottom h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.info-card-bottom p {
+  font-size: 16px;
+  color: #666;
+}
+
+.funding-cards,
+.funding-options {
+  padding-block: 80px;
+}
+
+.funding-cards h2 {
+  font-size: 44px;
+}
+
+.funding-cards__hero-abs {
+  bottom: -30%;
+}
+
+.card-info__icon-wrapper {
+  background: #fff3e9;
+}
+
+.funding-options__card {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 49px #00000022;
+}
+
+.card-info__icon-wrapper h3 {
+  font-size: 20px;
+}
+
+.funding-options__card-info p {
+  font-size: 14px;
+}
+
+.funding-options__card-info .apply-btn {
+  background-color: #ec6d2d;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  width: 80%;
+  margin-inline: auto;
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.funding-options__container {
+  max-width: 95%;
+  margin-top: 60px;
+}
+
+.funding-options__card-wrapper {
+  width: 20%;
+}
+
+.cta-section--overlay {
+  background: linear-gradient(
+    to right,
+    rgba(204, 102, 0, 0.73) 20%,
+    rgba(140, 73, 5, 0.96) 70%
+  );
+}
+
+@media (max-width: 1200px) {
+  .funding-options__card-wrapper {
+    width: 33%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .funding-options__card-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .funding-options__card-wrapper {
+    width: 100%;
+  }
+}
